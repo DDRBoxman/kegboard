@@ -101,7 +101,7 @@
 #define KB_PIN_WIEGAND_RFID_DATA1 A5
 
 // Atmega1280 (aka Arduino mega) section
-#ifdef __AVR_ATmega1280__
+#if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
 #define KB_ATMEGA_1280            1
 #define KB_NUM_METERS             6
 
